@@ -1,0 +1,4 @@
+Learning Git basics
+- git add . to stage files
+- git commit to save changes
+- still figuring this out!

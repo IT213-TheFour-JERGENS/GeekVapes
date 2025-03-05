@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-on-surface": "#313030",
+              "on-primary-fixed": "#2d004f",
+              "surface-tint": "#dfb7ff",
+              "on-secondary-fixed": "#022100",
+              "primary-container": "#9d00ff",
+              "secondary-fixed": "#79ff5b",
+              "surface-variant": "#353534",
+              "secondary-fixed-dim": "#2ae500",
+              "on-tertiary-fixed-variant": "#004f54",
+              "error": "#ffb4ab",
+              "on-primary": "#4b007e",
+              "on-error-container": "#ffdad6",
+              "secondary-container": "#2ff801",
+              "outline": "#9a8ca2",
+              "on-surface": "#e5e2e1",
+              "primary-fixed": "#f1daff",
+              "on-secondary": "#053900",
+              "on-surface-variant": "#d1c1d9",
+              "on-secondary-fixed-variant": "#095300",
+              "outline-variant": "#4e4356",
+              "on-tertiary-container": "#aff8ff",
+              "tertiary": "#00dbe9",
+              "surface-container-low": "#1c1b1b",
+              "inverse-primary": "#8c00e5",
+              "background": "#131313",
+              "on-tertiary-fixed": "#002022",
+              "on-background": "#e5e2e1",
+              "surface-container-highest": "#353534",
+              "surface-container-high": "#2a2a2a",
+              "surface-bright": "#3a3939",
+              "on-primary-container": "#f7e5ff",
+              "inverse-surface": "#e5e2e1",
+              "tertiary-container": "#00767e",
+              "on-tertiary": "#00363a",
+              "tertiary-fixed-dim": "#00dbe9",
+              "surface-dim": "#131313",
+              "tertiary-fixed": "#7df4ff",
+              "on-primary-fixed-variant": "#6b00b0",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "primary-fixed-dim": "#dfb7ff",
+              "on-secondary-container": "#0f6d00",
+              "surface-container": "#201f1f",
+              "surface": "#131313",
+              "secondary": "#d7ffc5",
+              "primary": "#dfb7ff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Space Grotesk"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 py-4 bg-[#131313]/80 backdrop-blur-xl border-b-2 border-[#9D00FF]/20 z-50">
+<div class="text-3xl font-black italic text-[#9D00FF] tracking-tighter font-headline"><a href="index.html">GEEKVAPES</a></div>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-white/70 hover:text-white transition-colors font-headline uppercase tracking-tighter" href="pods.html">PODS</a>
+<a class="text-[#2FF801] border-b-2 border-[#2FF801] pb-1 font-headline uppercase tracking-tighter" href="vapes.html">VAPES</a>
+<a class="text-white/70 hover:text-white transition-colors font-headline uppercase tracking-tighter" href="gadgets.html">GADGETS</a>
+<a class="text-white/70 hover:text-white transition-colors font-headline uppercase tracking-tighter" href="liquid.html">LIQUID</a>
+</div>
+<div class="flex items-center gap-6 text-[#9D00FF]">
+<button class="scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-2xl" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 px-8">
+<!-- Hero Section: Editorial Asymmetry -->
+<section class="grid grid-cols-12 gap-8 mb-32">
+<div class="col-span-12 md:col-span-7 flex flex-col justify-end">
+<span class="text-[#2FF801] font-label text-[11px] tracking-[0.3em] uppercase mb-4">SYSTEM_STATUS: HIGH_PERFORMANCE</span>
+<h1 class="text-[clamp(3rem,8vw,5.5rem)] font-black leading-[0.9] tracking-tighter uppercase mb-8">
+                    ADVANCED<br/>
+                    MODer<br/>
+<span class="text-primary-container">SYSTEMS</span>
+</h1>
+<p class="max-w-md text-on-surface-variant leading-relaxed opacity-80">
+                    Engineered for terminal cloud production and sensory precision. Our V2 architecture delivers sustained thermal consistency through kinetic energy management.
+                </p>
+</div>
+<div class="col-span-12 md:col-span-5 relative aspect-square bg-surface-container overflow-hidden group">
+<img alt="vape mod" class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 transition-all duration-700" data-alt="Close-up of a high-tech metallic vape mod with glowing purple LED accents and carbon fiber texture in a dark studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHERzrJVc8GIqXJmvnKHxVxwP5CmnvveZCQCPImd8t5Y2JD21FYZhktL0NBmIhOHQlDoW42-2rnW6mbFcQ2IaMfzLbIMolH7TskSh_JkNyqBKa3feREGLUFcFsGZ8RGTFNFP1_B6tHBtJAlsoi5HX9pZ1BW3Quy67ksyOgFQCzVHOvRK_05oemNBqMB4Li90bBXj51UOlU8lMk7y9ckpGQkoD-4x_G6w9WIdRmZ-K4VAeNouMWqA74EIPusxEcolKMSRvgoiQ-cEY"/>
+<div class="absolute inset-0 bg-primary-container/10 mix-blend-overlay"></div>
+<div class="absolute bottom-6 right-6 flex flex-col items-end">
+<span class="text-[11px] font-label tracking-widest text-[#00DBE9]">REF: MOD_CORE_01</span>
+<span class="text-white/40 text-[9px] font-mono">ENCRYPTED_SPEC</span>
+</div>
+</div>
+</section>
+<!-- Product Grid: Kinetic Monolith Style -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Product Card: TITAN V2 -->
+<div class="flex flex-col gap-6 bg-surface-container p-1 border-b-2 border-transparent hover:border-primary-container transition-all duration-500">
+<div class="aspect-[4/5] bg-surface-container-high relative overflow-hidden">
+<img alt="TITAN V2" class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500" data-alt="Heavy industrial grade vape mod with matte black finish and neon purple highlights positioned against a dark concrete background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDn5q_bigQWDFq6LZZ0pTv2rdquIECz_xNkiDIncXIx4PV-tbMwnTdBec08ZhIFIS80GPMtEIu72zO_1cOPNB0s56kKdjLQjYbrgOWyo3YfkzXd4xfaI1oOnPvGV7_HExKp_eVJhzrDYUo9-WSINnp_dMF7LcHaGy3HM0IRkSMbSSXr9geTsY09kBgmp0TlmAMhGx46Fch4FlBNogTvke51ArgHbkmuW_wocAUQ3tPNGeHWSMQb86rINijMGQOGFQfEgNoMwvOMT4"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-container text-white px-3 py-1 font-label text-[11px] tracking-tighter uppercase">ULTIMATE_POWER</span>
+</div>
+</div>
+<div class="px-4 pb-8 space-y-6">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-black uppercase tracking-tighter">TITANIUM V2</h3>
+<span class="text-[#2FF801] font-bold">$189.00</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">OUTPUT</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">300W MAX</p>
+</div>
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">CELLS</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">QUAD-18650</p>
+</div>
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">SHIELD</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">IP68 CERAMIC</p>
+</div>
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">CHIP</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">AS-GEN 4</p>
+</div>
+</div>
+<button class="w-full py-4 bg-primary-container text-on-primary-container font-black uppercase tracking-widest text-sm hover:bg-secondary-container hover:text-on-secondary-container transition-all group relative overflow-hidden">
+<span class="relative z-10">ADD TO CART</span>
+<!-- Coming Soon Overlay -->
+<div class="absolute inset-0 bg-black flex items-center justify-center opacity-0 group-active:opacity-100 transition-opacity">
+<span class="text-[#2FF801] text-xs font-black">COMING SOON / Q4 2024</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Product Card: AEGIS PRO MAX -->
+<div class="flex flex-col gap-6 bg-surface-container p-1 border-b-2 border-transparent hover:border-primary-container transition-all duration-500 mt-12 md:mt-0">
+<div class="aspect-[4/5] bg-surface-container-high relative overflow-hidden">
+<img alt="AEGIS PRO MAX" class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500" data-alt="Technological vape device with metallic surface and digital screen interface showcasing green neon metrics in a cybernetic lab environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAawo1hitEi-nJTZ9Mo89cm7zo1MdI-LNhwvA2HWrel1FwlrX0dHKiwpEd-ZpUVKpirw9_7n1P8WqIcLXUarG9GM8VEpLu3WwSRFX480faeVHvvSMy1S1LGczM_0CKK9aEcWV87JVlnczgs13Z4gj7BnDbdWDNYRAFxfZX5fEE7oX1w5mhPWNq_Wui2o7gWqYMrY5iCDRM9tiY2X-ShcQOEBTzao4jLElH_vLduHgwtJStUeC9pT55A-BLNG04_B7iYOG7cg9-mzIE"/>
+<div class="absolute top-4 left-4">
+<span class="bg-[#00DBE9] text-black px-3 py-1 font-label text-[11px] tracking-tighter uppercase">DURABILITY_X</span>
+</div>
+</div>
+<div class="px-4 pb-8 space-y-6">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-black uppercase tracking-tighter">AEGIS PRO MAX</h3>
+<span class="text-[#2FF801] font-bold">$145.00</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">OUTPUT</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">200W MAX</p>
+</div>
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">CELLS</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">DUAL-21700</p>
+</div>
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">SHIELD</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">MIL-SPEC DROP</p>
+</div>
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">CHIP</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">DNA-250C</p>
+</div>
+</div>
+<button class="w-full py-4 bg-primary-container text-on-primary-container font-black uppercase tracking-widest text-sm hover:bg-secondary-container hover:text-on-secondary-container transition-all group relative overflow-hidden">
+<span class="relative z-10">ADD TO CART</span>
+<div class="absolute inset-0 bg-black flex items-center justify-center opacity-0 group-active:opacity-100 transition-opacity">
+<span class="text-[#2FF801] text-xs font-black">RESTOCK_IN_PROGRESS</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Product Card: STRIKER X -->
+<div class="flex flex-col gap-6 bg-surface-container p-1 border-b-2 border-transparent hover:border-primary-container transition-all duration-500 md:translate-y-24">
+<div class="aspect-[4/5] bg-surface-container-high relative overflow-hidden">
+<img alt="STRIKER X" class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500" data-alt="Sleek silver and carbon fiber vape mod with minimalist design reflecting bright violet and neon blue lights in a futuristic setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKapPhWsH5RjjPt0in5aSWJwkK2vmF-WQ09pVIymHoVAlrYqLqs0L6yArtai0U0rL0qGCsn0qyhxpF4nuXW0mZo-Hj1LWBhd3j7rAjRB4WsbS5akRO9nHUX17hXfgb9hNzHkGp7pkmdsPkIhS7qf9XUUHFRFhconibnQ1tzdKI7J5yTT0yQr215t1HMNuFW77uPmGLk9qHHPo9ngHXIfxq3hTeVEoX8i7NgysD_Sifr6OmSsqSlvLouPKwIe-LPrqLKkrViK3yY88"/>
+<div class="absolute top-4 left-4">
+<span class="bg-[#2FF801] text-black px-3 py-1 font-label text-[11px] tracking-tighter uppercase">KINETIC_FLOW</span>
+</div>
+</div>
+<div class="px-4 pb-8 space-y-6">
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-black uppercase tracking-tighter">STRIKER X</h3>
+<span class="text-[#2FF801] font-bold">$115.00</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">OUTPUT</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">120W BOOST</p>
+</div>
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">CELLS</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">INTERNAL 4500</p>
+</div>
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">SHIELD</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">ANODIZED AL</p>
+</div>
+<div class="border-l-2 border-[#00DBE9]/30 pl-3">
+<p class="text-[10px] text-white/40 uppercase tracking-widest">CHIP</p>
+<p class="font-bold text-sm tracking-tight text-on-surface">MINI_FLOW</p>
+</div>
+</div>
+<button class="w-full py-4 bg-primary-container text-on-primary-container font-black uppercase tracking-widest text-sm hover:bg-secondary-container hover:text-on-secondary-container transition-all group relative overflow-hidden">
+<span class="relative z-10">ADD TO CART</span>
+<div class="absolute inset-0 bg-black flex items-center justify-center opacity-0 group-active:opacity-100 transition-opacity">
+<span class="text-[#2FF801] text-xs font-black">PRE_ORDER_ACTIVE</span>
+</div>
+</button>
+</div>
+</div>
+</section>
+<!-- The Data Ribbon -->
+<div class="mt-48 w-full overflow-hidden whitespace-nowrap bg-primary-container py-2 transform rotate-[-1deg] translate-y-12">
+<div class="flex animate-[scroll_20s_linear_infinite]">
+<span class="text-[11px] font-label font-bold tracking-[0.4em] uppercase text-on-primary-container px-8">SYSTEM_STABILITY: 99.9%</span>
+<span class="text-[11px] font-label font-bold tracking-[0.4em] uppercase text-on-primary-container px-8">THERMAL_OPTIMIZATION_ENGAGED</span>
+<span class="text-[11px] font-label font-bold tracking-[0.4em] uppercase text-on-primary-container px-8">CRYPTO_FLAVOR_ENHANCEMENT_V4</span>
+<span class="text-[11px] font-label font-bold tracking-[0.4em] uppercase text-on-primary-container px-8">TITAN_V2_FIRMWARE_UPDATE_LIVE</span>
+<span class="text-[11px] font-label font-bold tracking-[0.4em] uppercase text-on-primary-container px-8">GEEKVAPES_KINETIC_SYSTEMS</span>
+<span class="text-[11px] font-label font-bold tracking-[0.4em] uppercase text-on-primary-container px-8">TERMINAL_OVERRIDE_ENABLED</span>
+</div>
+</div>
+<style>
+            @keyframes scroll {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+        </style>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-[#201F1F] p-12 mt-40 border-t-4 border-[#9D00FF]">
+<div class="w-full flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-xl font-bold text-[#2FF801] font-headline tracking-tighter">GEEKVAPES</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-white/40 hover:text-[#00DBE9] transition-colors font-label text-[11px] tracking-widest uppercase" href="#">WARRANTY</a>
+<a class="text-white/40 hover:text-[#00DBE9] transition-colors font-label text-[11px] tracking-widest uppercase" href="#">LAB_REPORTS</a>
+<a class="text-white/40 hover:text-[#00DBE9] transition-colors font-label text-[11px] tracking-widest uppercase" href="#">FLAVOR_GUIDE</a>
+<a class="text-white/40 hover:text-[#00DBE9] transition-colors font-label text-[11px] tracking-widest uppercase" href="#">TERMINAL_ACCESS</a>
+</div>
+<div class="text-white/40 font-label text-[11px] tracking-widest uppercase">
+                © 2024 GEEKVAPES KINETIC SYSTEMS. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

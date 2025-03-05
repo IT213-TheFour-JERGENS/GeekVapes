@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GEEKVAPES | GADGETS LAB</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#d1c1d9",
+              "on-tertiary-fixed-variant": "#004f54",
+              "error-container": "#93000a",
+              "surface-dim": "#131313",
+              "surface-tint": "#dfb7ff",
+              "surface-container": "#201f1f",
+              "primary-fixed": "#f1daff",
+              "secondary-fixed": "#79ff5b",
+              "on-primary-fixed": "#2d004f",
+              "on-background": "#e5e2e1",
+              "tertiary-fixed": "#7df4ff",
+              "surface-container-low": "#1c1b1b",
+              "background": "#131313",
+              "primary": "#dfb7ff",
+              "surface": "#131313",
+              "primary-container": "#9d00ff",
+              "on-primary-container": "#f7e5ff",
+              "inverse-surface": "#e5e2e1",
+              "tertiary": "#00dbe9",
+              "tertiary-container": "#00767e",
+              "on-error-container": "#ffdad6",
+              "on-surface": "#e5e2e1",
+              "surface-container-highest": "#353534",
+              "secondary-fixed-dim": "#2ae500",
+              "inverse-primary": "#8c00e5",
+              "secondary-container": "#2ff801",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary": "#053900",
+              "primary-fixed-dim": "#dfb7ff",
+              "tertiary-fixed-dim": "#00dbe9",
+              "on-primary": "#4b007e",
+              "on-secondary-fixed-variant": "#095300",
+              "surface-bright": "#3a3939",
+              "surface-variant": "#353534",
+              "on-tertiary-fixed": "#002022",
+              "secondary": "#d7ffc5",
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-on-surface": "#313030",
+              "on-secondary-fixed": "#022100",
+              "outline": "#9a8ca2",
+              "on-tertiary-container": "#aff8ff",
+              "on-secondary-container": "#0f6d00",
+              "on-tertiary": "#00363a",
+              "error": "#ffb4ab",
+              "on-primary-fixed-variant": "#6b00b0",
+              "outline-variant": "#4e4356",
+              "on-error": "#690005"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Space Grotesk"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-grid {
+            background-image: linear-gradient(to right, #9D00FF10 1px, transparent 1px),
+                              linear-gradient(to bottom, #9D00FF10 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl border-b-2 border-[#9D00FF]/20 shadow-[0_0_20px_rgba(157,0,255,0.15)] flex justify-between items-center px-8 h-20">
+<div class="text-2xl font-black tracking-tighter text-[#9D00FF] italic"><a href="index.html">GEEKVAPES</a></div>
+<div class="hidden md:flex gap-8 font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-sm">
+<a class="text-white hover:text-[#9D00FF] transition-colors" href="pods.html">PODS</a>
+<a class="text-white hover:text-[#9D00FF] transition-colors" href="vapes.html">VAPES</a>
+<a class="text-[#2FF801] border-b-2 border-[#2FF801] pb-1" href="gadgets.html">GADGETS</a>
+<a class="text-white hover:text-[#9D00FF] transition-colors" href="liquid.html">LIQUID</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:bg-[#2A2A2A] transition-all duration-200 p-2 scale-95 active:duration-75">
+<span class="material-symbols-outlined text-[#9D00FF]">shopping_cart</span>
+</button>
+</div>
+</nav>
+<main class="pt-20 min-h-screen kinetic-grid">
+<!-- Hero Section -->
+<section class="relative h-[409px] flex items-end px-12 pb-16 overflow-hidden">
+<div class="absolute inset-0 z-0 bg-gradient-to-t from-background via-transparent to-primary-container/10"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] opacity-20 blur-[120px] bg-primary-container pointer-events-none"></div>
+<div class="relative z-10 w-full">
+<p class="text-secondary font-bold tracking-[0.4em] text-[11px] mb-4 uppercase">SYSTEM // PERIPHERALS</p>
+<h1 class="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none">
+                    TECH &amp; TOOLS <span class="text-primary-container">//</span> <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-container to-tertiary">THE GADGETS LAB</span>
+</h1>
+</div>
+</section>
+<div class="flex flex-col md:flex-row px-12 gap-12 pb-24">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-64 flex-shrink-0">
+<div class="sticky top-32 space-y-12">
+<div>
+<h3 class="text-primary font-bold text-xs tracking-[0.2em] mb-6 uppercase border-l-2 border-primary pl-4">Category</h3>
+<ul class="space-y-4">
+<li><label class="flex items-center gap-3 cursor-pointer group"><input class="bg-transparent border-outline text-secondary-container focus:ring-0 rounded-none w-4 h-4" type="checkbox"/><span class="text-sm font-medium tracking-tight group-hover:text-secondary transition-colors">POWER UNITS</span></label></li>
+<li><label class="flex items-center gap-3 cursor-pointer group"><input class="bg-transparent border-outline text-secondary-container focus:ring-0 rounded-none w-4 h-4" type="checkbox"/><span class="text-sm font-medium tracking-tight group-hover:text-secondary transition-colors">MAINTENANCE TOOLS</span></label></li>
+<li><label class="flex items-center gap-3 cursor-pointer group"><input class="bg-transparent border-outline text-secondary-container focus:ring-0 rounded-none w-4 h-4" type="checkbox"/><span class="text-sm font-medium tracking-tight group-hover:text-secondary transition-colors">SPARES &amp; COMPONENTS</span></label></li>
+</ul>
+</div>
+<div>
+<h3 class="text-primary font-bold text-xs tracking-[0.2em] mb-6 uppercase border-l-2 border-primary pl-4">Performance Tier</h3>
+<div class="space-y-2">
+<button class="w-full text-left py-2 px-4 border border-outline-variant hover:border-secondary hover:text-secondary text-xs font-bold transition-all">TIER-01 // ENTRY</button>
+<button class="w-full text-left py-2 px-4 border border-secondary text-secondary bg-secondary/5 text-xs font-bold transition-all">TIER-02 // ADVANCED</button>
+<button class="w-full text-left py-2 px-4 border border-outline-variant hover:border-secondary hover:text-secondary text-xs font-bold transition-all">TIER-03 // OVERCLOCK</button>
+</div>
+</div>
+<div class="p-6 bg-surface-container-high border-t-2 border-primary-container">
+<span class="material-symbols-outlined text-tertiary mb-2">info</span>
+<p class="text-[10px] leading-relaxed text-on-surface-variant uppercase tracking-widest">System status: All specialized gadgets are currently in limited-run production. Shipping priority to Beta users.</p>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-grow">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Card 1: Smart Multi-Charger -->
+<div class="group bg-surface-container-low border border-transparent hover:border-primary-container/30 transition-all duration-300 relative overflow-hidden">
+<div class="h-64 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="Futuristic electronic battery charger with glowing neon LED status display in a dark high-tech workshop setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR84Yu-dRKQeI54Yx9MOmjwgow-yIEWN1-_fubTx0RYe_cQ5h838OYk2pu1YsDxhta4c-Xon-A7MGcIiynHmk5T-yt5E815DwKcjP9c1YGZsYpdIvSLqolgORw4eQSndj6ojP_PfE6XdpJXLav00aW_BDFJ-LEhUavFBUOnAAUSz27ngE-6YR6gKvsiqDs7j_jLn3wKOdmnznFzoUFbw63sT9UpP7gDcaWlQ7ys00pjJZKE7SO6NM5KyDQfkvltCw4j8QDyS7g1I0"/>
+<div class="absolute top-4 right-4 bg-primary-container text-[10px] font-black px-2 py-1 tracking-tighter italic">HOT ITEM</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h2 class="text-2xl font-black uppercase tracking-tighter leading-none">Smart <br/>Multi-Charger</h2>
+<span class="text-secondary font-mono text-sm tracking-widest">$89.00</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-8 line-clamp-2 uppercase font-medium tracking-tight">Quad-channel intelligent charging system with real-time LED telemetry and thermal protection.</p>
+<div class="flex gap-4">
+<button class="flex-1 py-4 border-b-2 border-outline hover:border-secondary hover:text-secondary text-[11px] font-bold tracking-[0.2em] transition-all uppercase">View Specs</button>
+<button class="flex-1 py-4 bg-primary-container text-on-primary-container hover:bg-secondary-container hover:text-on-secondary transition-all text-[11px] font-bold tracking-[0.2em] uppercase" onclick="alert('Coming Soon')">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Card 2: High-Capacity 21700 Cells -->
+<div class="group bg-surface-container-low border border-transparent hover:border-primary-container/30 transition-all duration-300 relative overflow-hidden">
+<div class="h-64 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="Set of high-performance metallic lithium batteries lined up on a dark circuit board surface with purple accent lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWORdHZgP0mTgxuQa88pp8S9olAWLJo6CYfoBg1V_HkAwyhtIQaSw_57QQVtuxip58tx6qAN5Zoq1akxuGzsMP6s7WSwpN9ltOyRbPFohm8gNGB6RBx6F1ZgwFurtRjijkGq53K8zcZuV_cBCaJD8pOT9-BTeDCkvufF7R5uL5nJ6RsHplTSv2lLCbO8IBanVJmDhXcXUrnpDPPxm6eQpe3Ip6xB24XD4h1EVQQJrA45VOKmuzMeV2P6IuwLzoE6Mr-ZbA5xEUlKo"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h2 class="text-2xl font-black uppercase tracking-tighter leading-none">High-Capacity <br/>21700 Cells</h2>
+<span class="text-secondary font-mono text-sm tracking-widest">$24.00</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-8 line-clamp-2 uppercase font-medium tracking-tight">Military-grade power storage. 4000mAh sustained output for extreme performance sessions.</p>
+<div class="flex gap-4">
+<button class="flex-1 py-4 border-b-2 border-outline hover:border-secondary hover:text-secondary text-[11px] font-bold tracking-[0.2em] transition-all uppercase">View Specs</button>
+<button class="flex-1 py-4 bg-primary-container text-on-primary-container hover:bg-secondary-container hover:text-on-secondary transition-all text-[11px] font-bold tracking-[0.2em] uppercase" onclick="alert('Coming Soon')">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Card 3: DIY Coil Building Kit -->
+<div class="group bg-surface-container-low border border-transparent hover:border-primary-container/30 transition-all duration-300 relative overflow-hidden">
+<div class="h-64 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="High-precision specialized metal tools and tweezers arranged in a hard shell case with blue cybernetic glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9Mng6v8c6ZiLSZ0wSOAbXESVxJitf6_DQ0APOgFArj8byUCsXCdGidPK-qo6F3N1httUzNvZdayyJm7vXUg0a5MorowZgWGMCr04hSn1OAktfiQt0qFDxhLf0xosGkmB_lMyVWPknTHZ8BfqmXwlOSxH7Q_jsvKzOvg5UHOBAzLXcolL2FBvpDjz3fnOUM1O494qkrLs00aGK1Mkz_v1irx9qg9tnBfxjeq_9hqrl4y6c7mv1a3FfrZXOOcUHIpKnk3j_4DigndE"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h2 class="text-2xl font-black uppercase tracking-tighter leading-none">DIY Coil <br/>Building Kit</h2>
+<span class="text-secondary font-mono text-sm tracking-widest">$45.00</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-8 line-clamp-2 uppercase font-medium tracking-tight">Precision engineering tools including ceramic tweezers, wire cutters, and ohm-meter base.</p>
+<div class="flex gap-4">
+<button class="flex-1 py-4 border-b-2 border-outline hover:border-secondary hover:text-secondary text-[11px] font-bold tracking-[0.2em] transition-all uppercase">View Specs</button>
+<button class="flex-1 py-4 bg-primary-container text-on-primary-container hover:bg-secondary-container hover:text-on-secondary transition-all text-[11px] font-bold tracking-[0.2em] uppercase" onclick="alert('Coming Soon')">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Card 4: OLED Terminal Display Modules -->
+<div class="group bg-surface-container-low border border-transparent hover:border-primary-container/30 transition-all duration-300 relative overflow-hidden">
+<div class="h-64 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="Micro OLED screen showing digital readouts and data visualizations on a complex circuit board with neon green lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuaz01A-VpG2H18fSTik7tpg2rt4JuM9Y3E5ibS6FsYtNrItLgJ2BbmvdOVo73lPbdwHhABzCYtauQpslombrXh0oMBvdVSmOiExx5yfwd8Ssys5lsr-YpnMjis_9Qhu_hREY0gYXLjPu48xGHzcPWhy9BgXoGjaG1cyPjnuo8rd_wqWODxtwNwtUNtG0AKGhXZZBtz6ZH0Fp-uzoOUQK8KQl4hqnpE9ryzDj62dQl6ulqe-IPgG54thx-jXyxiFuo3u87Hb9E620"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h2 class="text-2xl font-black uppercase tracking-tighter leading-none">OLED Terminal <br/>Display Modules</h2>
+<span class="text-secondary font-mono text-sm tracking-widest">$115.00</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-8 line-clamp-2 uppercase font-medium tracking-tight">Customizable 0.96" OLED interface modules for advanced device modding and system monitoring.</p>
+<div class="flex gap-4">
+<button class="flex-1 py-4 border-b-2 border-outline hover:border-secondary hover:text-secondary text-[11px] font-bold tracking-[0.2em] transition-all uppercase">View Specs</button>
+<button class="flex-1 py-4 bg-primary-container text-on-primary-container hover:bg-secondary-container hover:text-on-secondary transition-all text-[11px] font-bold tracking-[0.2em] uppercase" onclick="alert('Coming Soon')">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Ticker Tape Component -->
+<div class="w-full bg-secondary-container py-4 overflow-hidden whitespace-nowrap border-y-2 border-background">
+<div class="flex animate-marquee gap-12 items-center">
+<span class="text-on-secondary-container font-black tracking-widest text-[10px] uppercase">System Status: Optimal</span>
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="text-on-secondary-container font-black tracking-widest text-[10px] uppercase">New Inventory Landing 12:00 UTC</span>
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="text-on-secondary-container font-black tracking-widest text-[10px] uppercase">Gadgets Lab // Tier-02 Access Granted</span>
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="text-on-secondary-container font-black tracking-widest text-[10px] uppercase">Warning: High Voltage Performance</span>
+</div>
+</div>
+<style>
+            @keyframes marquee {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+            .animate-marquee {
+                display: inline-flex;
+                animation: marquee 20s linear infinite;
+                min-width: 200%;
+            }
+        </style>
+</main>
+<!-- Footer -->
+<footer class="bg-[#131313] w-full border-t-2 border-[#2FF801] flex flex-col md:flex-row justify-between items-center px-12 py-16 mt-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-black text-white mb-2 italic">GEEKVAPES</div>
+<p class="font-['Space_Grotesk'] text-[11px] tracking-[0.2em] font-medium uppercase text-white/40">© 2024 GEEKVAPES KINETIC SYSTEMS. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex gap-12 font-['Space_Grotesk'] text-[11px] tracking-[0.2em] font-medium uppercase">
+<a class="text-white/60 hover:text-white hover:tracking-[0.3em] transition-all duration-500" href="#">PRIVACY</a>
+<a class="text-white/60 hover:text-white hover:tracking-[0.3em] transition-all duration-500" href="#">TERMS</a>
+<a class="text-white/60 hover:text-white hover:tracking-[0.3em] transition-all duration-500" href="#">WARRANTY</a>
+<a class="text-white/60 hover:text-white hover:tracking-[0.3em] transition-all duration-500" href="#">SUPPORT</a>
+</div>
+</footer>
+</body></html>
+<!-- Gadgets page updated April 2024 -->
+
+<!-- Gadgets page updated April 2024 -->
+
+<!-- Gadgets page updated April 2024 -->

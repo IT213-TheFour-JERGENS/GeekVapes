@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GEEKVAPES // LIQUID_INTELLIGENCE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-surface": "#e5e2e1",
+                        "on-secondary": "#053900",
+                        "surface-tint": "#dfb7ff",
+                        "surface-container-highest": "#353534",
+                        "error": "#ffb4ab",
+                        "secondary-container": "#2ff801",
+                        "on-primary": "#4b007e",
+                        "secondary-fixed-dim": "#2ae500",
+                        "outline": "#9a8ca2",
+                        "on-surface": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "surface": "#131313",
+                        "primary-fixed-dim": "#dfb7ff",
+                        "on-background": "#e5e2e1",
+                        "on-surface-variant": "#d1c1d9",
+                        "on-error": "#690005",
+                        "on-primary-fixed": "#2d004f",
+                        "on-primary-container": "#f7e5ff",
+                        "on-secondary-fixed": "#022100",
+                        "outline-variant": "#4e4356",
+                        "inverse-primary": "#8c00e5",
+                        "on-error-container": "#ffdad6",
+                        "tertiary": "#00dbe9",
+                        "on-tertiary-fixed-variant": "#004f54",
+                        "on-primary-fixed-variant": "#6b00b0",
+                        "secondary-fixed": "#79ff5b",
+                        "inverse-on-surface": "#313030",
+                        "surface-variant": "#353534",
+                        "surface-container-high": "#2a2a2a",
+                        "primary-fixed": "#f1daff",
+                        "surface-dim": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-fixed-dim": "#00dbe9",
+                        "on-tertiary-fixed": "#002022",
+                        "on-secondary-fixed-variant": "#095300",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-bright": "#3a3939",
+                        "tertiary-container": "#00767e",
+                        "on-secondary-container": "#0f6d00",
+                        "primary-container": "#9d00ff",
+                        "surface-container": "#201f1f",
+                        "secondary": "#d7ffc5",
+                        "primary": "#dfb7ff",
+                        "background": "#131313",
+                        "on-tertiary": "#00363a",
+                        "on-tertiary-container": "#aff8ff",
+                        "tertiary-fixed": "#7df4ff"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Space Grotesk"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-glow {
+            text-shadow: 0 0 20px rgba(157, 0, 255, 0.6);
+        }
+        .circuit-line {
+            background: linear-gradient(90deg, transparent, #2FF801, transparent);
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TOP NAV BAR -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 h-20 bg-[#131313]/80 backdrop-blur-xl border-b-2 border-[#9D00FF] shadow-[0_0_20px_rgba(157,0,255,0.3)] z-50">
+<div class="text-3xl font-black tracking-tighter text-[#9D00FF] font-['Space_Grotesk'] uppercase">
+            <a href="index.html">GEEKVAPES</a>
+        </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-white/70 hover:text-white transition-colors" href="pods.html">PODS</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-white/70 hover:text-white transition-colors" href="vapes.html">VAPES</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-white/70 hover:text-white transition-colors" href="gadgets.html">GADGETS</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-[#2FF801] border-b-2 border-[#2FF801] pb-1" href="liquid.html">LIQUID</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="text-white/70 hover:bg-[#2FF801] hover:text-[#131313] p-2 transition-all duration-200 scale-95 active:scale-90">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- HERO SECTION -->
+<section class="relative h-[716px] w-full bg-surface overflow-hidden flex items-center px-8 md:px-20 border-b-2 border-primary-container">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent z-10"></div>
+<img alt="Abstract Neon Fluid" class="w-full h-full object-cover opacity-60" data-alt="Abstract macro shot of swirling purple and neon green liquid with high contrast lighting and digital glitch textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaoQ1bY9C18Tc8nOqisqazlXzUZnXJwjGHYltE2lugfzoNY6Rl01ej-7EXD7-3K8WhiiNWCjl1R5F_4hxYKvXt0j6AH2Ea0DTdn8-vuyfXtHD2J4udJSfEY7ajORT3Dt2gBZ66l9MYTymAzoDWHatiGxVQrDAVSity_HRl_liJyQqSXw1efq02YFRgBf4fCLouLIjOSk4SJgZ25a0PrthjkoSwHgYjx6qh5FGDmbB5Ki6CVNv2V-GfLYtcuilnO7WIc3QcMgF5tRw"/>
+</div>
+<div class="relative z-20 max-w-4xl">
+<div class="flex items-center space-x-4 mb-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[11px] font-bold tracking-widest uppercase">System_Loaded</span>
+<div class="h-[2px] w-20 bg-secondary-container"></div>
+</div>
+<h1 class="text-[56px] md:text-[90px] font-black leading-[0.9] tracking-tighter uppercase font-headline italic mb-6">
+                    LIQUID_<span class="text-primary-container kinetic-glow">INTELLIGENCE</span><br/>
+<span class="text-secondary-container">//</span> PREMIUM FORMULAS
+                </h1>
+<p class="text-lg text-on-surface-variant max-w-xl font-body leading-relaxed border-l-4 border-primary-container pl-6">
+                    ENGINEERED FOR OPTIMAL VISCOSITY AND MAXIMUM BIOAVAILABILITY. OUR FORMULAS ARE STABILIZED FOR SUB-OHM AND POD-BASED TRANSMISSION.
+                </p>
+</div>
+<!-- ASYMMETRIC DECORATION -->
+<div class="absolute right-0 top-0 h-full w-1/3 border-l-2 border-primary-container/20 flex flex-col justify-end p-12 hidden lg:flex">
+<div class="text-[11px] font-mono text-tertiary tracking-widest mb-4">BATCH_ID: GV-992-PX</div>
+<div class="space-y-2">
+<div class="h-1 w-full bg-surface-container-highest"></div>
+<div class="h-1 w-3/4 bg-primary-container"></div>
+<div class="h-1 w-1/2 bg-secondary-container"></div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-12 gap-0 min-h-screen">
+<!-- FILTER SIDEBAR -->
+<aside class="col-span-12 lg:col-span-3 bg-surface-container border-r-2 border-primary-container/30 p-8 space-y-12">
+<div>
+<h3 class="text-[11px] text-secondary font-bold tracking-[0.3em] uppercase mb-6 flex items-center">
+<span class="material-symbols-outlined text-[14px] mr-2">filter_list</span>
+                        Category_Filter
+                    </h3>
+<ul class="space-y-4">
+<li class="group">
+<button class="w-full text-left text-on-surface hover:text-secondary-container transition-all flex justify-between items-center group-hover:pl-2">
+<span class="text-sm font-bold uppercase tracking-widest">Salt Nic</span>
+<span class="text-[10px] opacity-40">01</span>
+</button>
+</li>
+<li class="group">
+<button class="w-full text-left text-secondary-container flex justify-between items-center">
+<span class="text-sm font-bold uppercase tracking-widest underline decoration-2 underline-offset-4">Freebase</span>
+<span class="material-symbols-outlined text-sm">radio_button_checked</span>
+</button>
+</li>
+<li class="group">
+<button class="w-full text-left text-on-surface hover:text-secondary-container transition-all flex justify-between items-center group-hover:pl-2">
+<span class="text-sm font-bold uppercase tracking-widest">High VG</span>
+<span class="text-[10px] opacity-40">03</span>
+</button>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-[11px] text-secondary font-bold tracking-[0.3em] uppercase mb-6 flex items-center">
+                        Flavor_Profiles
+                    </h3>
+<div class="grid grid-cols-2 gap-2">
+<button class="p-3 border border-outline-variant text-[11px] font-bold uppercase hover:bg-primary-container hover:text-on-primary-container transition-all">Fruity</button>
+<button class="p-3 border border-outline-variant text-[11px] font-bold uppercase hover:bg-primary-container hover:text-on-primary-container transition-all">Menthol</button>
+<button class="p-3 border border-outline-variant text-[11px] font-bold uppercase hover:bg-primary-container hover:text-on-primary-container transition-all">Tobacco</button>
+<button class="p-3 border border-outline-variant text-[11px] font-bold uppercase hover:bg-primary-container hover:text-on-primary-container transition-all">Dessert</button>
+</div>
+</div>
+<div>
+<h3 class="text-[11px] text-secondary font-bold tracking-[0.3em] uppercase mb-6 flex items-center">
+                        Nic_Strength
+                    </h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between text-xs">
+<span class="opacity-60">DOSAGE_LEVEL</span>
+<span class="text-tertiary">12mg</span>
+</div>
+<input class="w-full accent-secondary-container bg-surface-container-highest appearance-none h-1" type="range"/>
+<div class="flex justify-between text-[10px] font-mono opacity-40">
+<span>3MG</span>
+<span>6MG</span>
+<span>12MG</span>
+<span>20MG</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- PRODUCT GRID -->
+<div class="col-span-12 lg:col-span-9 p-8 md:p-12 bg-surface-container-low">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl font-black uppercase tracking-tighter">Liquid_Inventory</h2>
+<p class="text-[11px] text-on-surface-variant font-mono uppercase tracking-[0.2em] mt-2">Displaying 24 Active Formulas // Page 01</p>
+</div>
+<div class="flex space-x-4">
+<button class="p-2 border border-outline-variant hover:bg-secondary-container hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="p-2 border border-outline-variant hover:bg-secondary-container hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined">view_list</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- PRODUCT CARD 1 -->
+<div class="bg-surface-container-high group relative overflow-hidden transition-all hover:-translate-y-2">
+<div class="absolute top-4 left-4 z-10 flex flex-col items-start gap-2">
+<span class="bg-primary-container text-on-primary-container px-2 py-1 text-[9px] font-black uppercase tracking-widest">Formula_01</span>
+<span class="bg-surface/80 backdrop-blur px-2 py-1 text-[9px] font-black uppercase tracking-widest border border-primary-container">High_VG</span>
+</div>
+<div class="relative h-80 overflow-hidden bg-surface-container-highest">
+<img alt="Neon Glitch Liquid" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0" data-alt="A futuristic e-liquid bottle glowing with blue and purple light on a sleek black metal surface with vapor tendrils" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5gxKkggI61vKFPGJ-MX6vVlMRheNA8lCTqJjE7jlAdAKYlcTGUSX2dTlZGXUDxaLS6ZR3kLhTokjV4M8XS16B4RTIJjOsmrvOeGm5m-l_07B2gZwuWwZNfNfERrv6RZBQuprjrqLXRU9PZZb6qMZBcPrp5RNEDtKxUS_XoXw8G7sSITIZMorXPT3JlyLLQ9BlPDUJy5l3r2DjGrqlbUZd1LxND-JAcidWykFXJ2zavIyIJzPRxbG0ygYHPJZVoHAVUPTlOPmJvGg"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold uppercase tracking-tighter text-secondary-container">Neon Glitch</h3>
+<p class="text-[11px] font-mono text-tertiary">Sour Blue Razz</p>
+</div>
+<div class="text-right">
+<span class="text-xs font-mono opacity-50 block uppercase">Volume</span>
+<span class="text-sm font-bold">60ML</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-8">
+<span class="text-2xl font-black font-headline">$24.00</span>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 text-xs font-black uppercase tracking-widest hover:bg-secondary-container hover:text-on-secondary-container transition-colors active:scale-95">
+                                    Add_to_Cart
+                                </button>
+</div>
+</div>
+<!-- Status Overlay (Simulated interaction result) -->
+<div class="absolute inset-0 bg-secondary-container/90 flex flex-col items-center justify-center p-8 text-[#131313] opacity-0 pointer-events-none group-active:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl mb-2" data-weight="fill">verified</span>
+<span class="text-xl font-black uppercase tracking-tighter">System_Updating</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Adding to Core Memory...</span>
+</div>
+</div>
+<!-- PRODUCT CARD 2 -->
+<div class="bg-surface-container-high group relative overflow-hidden transition-all hover:-translate-y-2">
+<div class="absolute top-4 left-4 z-10 flex flex-col items-start gap-2">
+<span class="bg-primary-container text-on-primary-container px-2 py-1 text-[9px] font-black uppercase tracking-widest">Formula_02</span>
+</div>
+<div class="relative h-80 overflow-hidden bg-surface-container-highest">
+<img alt="Plasma Pulse Liquid" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0" data-alt="Modern geometric e-liquid bottle design with amber liquid and neon orange highlights against a dark industrial background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Y2uXKrFGGemzZbHXxN-nHyF0RGrT33IsvHlEGAETFAtTmB7TAsmdEozDEjoIXALs8J2V0MnVuXLaV5QRmBfGnCVy3TO8llJnmwL7tBmM31Xm34PeAARQHBuD9vSTmy3VWvqeqbyPZoxbIeJ_XJsYJoep3OlF0VxXGihJRL0ymEzMCDa-KfceEQugZIEEXM68gUrsUl5fpyCvKKGGgjGZF3BSSIbS5o6O6Z6cexJQ7Hc4FMRp_w-Wvkgc4soslumaYRiiSi5lI5E"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold uppercase tracking-tighter text-secondary-container">Plasma Pulse</h3>
+<p class="text-[11px] font-mono text-tertiary">Tropical Mango</p>
+</div>
+<div class="text-right">
+<span class="text-xs font-mono opacity-50 block uppercase">Volume</span>
+<span class="text-sm font-bold">100ML</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-8">
+<span class="text-2xl font-black font-headline">$28.00</span>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 text-xs font-black uppercase tracking-widest hover:bg-secondary-container hover:text-on-secondary-container transition-colors active:scale-95">
+                                    Add_to_Cart
+                                </button>
+</div>
+</div>
+</div>
+<!-- PRODUCT CARD 3 -->
+<div class="bg-surface-container-high group relative overflow-hidden transition-all hover:-translate-y-2 border-2 border-secondary-container/20">
+<div class="absolute top-4 left-4 z-10 flex flex-col items-start gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-2 py-1 text-[9px] font-black uppercase tracking-widest">Top_Seller</span>
+<span class="bg-surface/80 backdrop-blur px-2 py-1 text-[9px] font-black uppercase tracking-widest border border-primary-container">Formula_03</span>
+</div>
+<div class="relative h-80 overflow-hidden bg-surface-container-highest">
+<img alt="Cosmic Core Liquid" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0" data-alt="Luxury tobacco e-liquid bottle with metallic gold and deep purple label, moody dramatic lighting and sharp reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIG5Gansz5SC0_8ZwwZLQnb7gwI1RhKODYIloWBb7fONHfhFHcU4BWaDeVCqBb7ze6Zrk6hYyk-ElGS7X-FqsfuH5W9XSd40TK4023jZtkn6dwCL3MXnNDJ8Eyk_lfx7ROMK8RyZi7FYNaO3kCaJnLPcGlzK4BbI8_cxskoYji2e2SsaDu8LavBniUA65TRz4JO8-hoHs6WsmRWGE2ZJTOl4zwRszqMknEcyDmr8hmlpDw-ZwNzfBKFjWk5OtWCOagjG3dJNBDFI0"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold uppercase tracking-tighter text-secondary-container">Cosmic Core</h3>
+<p class="text-[11px] font-mono text-tertiary">Classic Tobacco</p>
+</div>
+<div class="text-right">
+<span class="text-xs font-mono opacity-50 block uppercase">Volume</span>
+<span class="text-sm font-bold">60ML</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-8">
+<span class="text-2xl font-black font-headline">$26.00</span>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 text-xs font-black uppercase tracking-widest hover:bg-secondary-container hover:text-on-secondary-container transition-colors active:scale-95">
+                                    Add_to_Cart
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SYSTEM MESSAGE / CALLOUT -->
+<div class="mt-20 p-12 bg-primary-container text-on-primary-container relative overflow-hidden">
+<div class="absolute right-0 top-0 h-full w-1/2 opacity-20 pointer-events-none">
+<img alt="Circuit Pattern" class="w-full h-full object-cover mix-blend-overlay" data-alt="Technical digital blueprint of complex motherboard circuits with glowing signal lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPonyrfBYmvM57PFYQXgHjtNZauirWCh97beDHtFjmyk4kDzUTH7OtrDMd53_GTbCA9CPt9JDT0Wm8Hp9wAv8bEfkKQwDT0mZqqSDoEInd_2NiMX9D6OuyRKSEZyPAkqJpsiLuFQjBNUonaf05yJbgEXDtovEy4W_FfFGHis2y-_fGr1DLZEMxGZ-Eq4MUTfDAATJRMrM_0Fv3TSOx6Wj5wK5lgQIEyCJ6W5OtRC0-S2D0UoF0_PRn9Bv1I6tHiHQ_sKjfR-Cetpk"/>
+</div>
+<div class="relative z-10">
+<h4 class="text-4xl font-black uppercase italic tracking-tighter mb-4 italic">Join the_Network</h4>
+<p class="text-lg max-w-lg font-medium leading-tight opacity-90 uppercase">Subscribe to auto-delivery and receive 15% reduction on all future formula allocations.</p>
+<div class="mt-8 flex max-w-md border-b-2 border-on-primary-container">
+<input class="bg-transparent border-none focus:ring-0 placeholder:text-on-primary-container/40 uppercase text-xs flex-grow py-4" placeholder="ENTER_EMAIL_ADDRESS" type="email"/>
+<button class="font-black uppercase tracking-widest text-xs px-4">Transmit</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="bg-[#201F1F] border-t-2 border-[#2FF801] p-12 mt-auto w-full">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto items-center">
+<div>
+<div class="text-lg font-bold text-[#9D00FF] font-['Space_Grotesk'] uppercase mb-4">GEEKVAPES</div>
+<p class="font-['Space_Grotesk'] text-[11px] uppercase tracking-widest text-white/40">
+                    ©2024 GEEKVAPES TECH CORP // ALL RIGHTS RESERVED
+                </p>
+</div>
+<div class="flex flex-wrap justify-end gap-6">
+<a class="font-['Space_Grotesk'] text-[11px] uppercase tracking-widest text-white/40 hover:text-[#00DBE9] underline decoration-2 transition-all opacity-80 hover:opacity-100" href="#">TERMS OF SERVICE</a>
+<a class="font-['Space_Grotesk'] text-[11px] uppercase tracking-widest text-white/40 hover:text-[#00DBE9] underline decoration-2 transition-all opacity-80 hover:opacity-100" href="#">PRIVACY POLICY</a>
+<a class="font-['Space_Grotesk'] text-[11px] uppercase tracking-widest text-white/40 hover:text-[#00DBE9] underline decoration-2 transition-all opacity-80 hover:opacity-100" href="#">AGE VERIFICATION</a>
+<a class="font-['Space_Grotesk'] text-[11px] uppercase tracking-widest text-white/40 hover:text-[#00DBE9] underline decoration-2 transition-all opacity-80 hover:opacity-100" href="#">SYSTEM LOGS</a>
+</div>
+</div>
+</footer>
+<!-- SCROLLING DATA RIBBON -->
+<div class="fixed bottom-0 w-full bg-[#131313] border-t border-outline-variant/20 py-1 overflow-hidden z-40">
+<div class="flex whitespace-nowrap animate-pulse items-center space-x-12 px-4">
+<span class="text-[10px] font-mono text-secondary-container">STATUS: OPTIMAL</span>
+<span class="text-[10px] font-mono text-on-surface-variant">// SYSTEM_LOAD_01: 44%</span>
+<span class="text-[10px] font-mono text-on-surface-variant">// FLAVOR_STABILITY: 100%</span>
+<span class="text-[10px] font-mono text-primary-container">ALERT: NEW_FORMULA_ARRIVING_ETR_48H</span>
+<span class="text-[10px] font-mono text-on-surface-variant">// VAPE_TEMP: 220C</span>
+<span class="text-[10px] font-mono text-secondary-container">CORE_INTEGRITY: SECURE</span>
+</div>
+</div>
+</body></html>
