@@ -1,0 +1,4 @@
+March 11 update:
+- Learning more about Git
+- Added some documentation
+- Still practicing commits
